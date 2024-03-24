@@ -1,0 +1,44 @@
+.exchanges {
+    padding-bottom: 140px;
+}
+@media (max-width: 1023.98px){
+    .exchanges {
+        padding-bottom: 100px;
+    }
+}
+.exchanges__wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.exchanges__title {
+    color: rgb(129, 143, 163);
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 24px;
+    padding-bottom: 48px;
+}
+.exchanges__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.exchanges__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 278px;
+    min-height: 85px;
+    text-align: center;
+    box-sizing: border-box;
+    border: 1px solid rgb(43, 58, 78);
+    border-radius: 18px;
+    backdrop-filter: blur(17.6px);
+    background: rgba(21, 30, 46, 0.4);
+}
+.exchanges__img {
+
+}

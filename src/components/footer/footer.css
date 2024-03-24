@@ -1,0 +1,242 @@
+.footer {
+    margin-top: auto;
+    background: #151b27;
+}
+
+.footer__container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.footer__wrap {
+    display: flex;
+    flex-direction: column;
+}
+/* ============================================================== */
+
+.footer__top {
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    gap: 192px;
+}
+@media (max-width: 930px){
+    .footer__top {
+        gap: 102px;
+        padding-bottom: 25px;
+    }
+}
+@media (max-width: 767.98px){
+    .footer__top {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+}
+.top-footer__ready {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+@media (max-width: 767.98px){
+    .top-footer__ready {
+        align-items: center;
+    }
+}
+.ready__text {
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 26px;
+}
+.ready__button {
+    border-radius: 25px;
+    background: #0478fe;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 25px 68px;
+    transition: all 0.3s;
+}
+.ready__button:hover {
+    background: #005ae0;
+}
+@media (max-width: 424.98px){
+    .ready__text {
+        font-size: 18px;
+    }
+    .ready__button {
+        font-size: 16px;
+        padding: 20px 60px;
+
+    }
+}
+/* ------------------------- */
+
+.top-footer__menu-wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 2;
+}
+@media (max-width: 767.98px){
+    .top-footer__menu-wrap {
+        justify-content: space-around;
+    }
+}
+
+.top-footer__product {
+    display: flex;
+    flex-direction: column;
+}
+.product__title {
+    color: rgb(4, 120, 254);
+    font-size: 18px;
+    line-height: 19px;
+    padding-bottom: 25px;
+}
+.product__menu {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.product__item {
+
+}
+.product__link {
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: -0.2px;
+    transition: all 0.3s;
+}
+.product__link:hover {
+    color: #0478fe;
+}
+
+/* -------------------------------- */
+
+.top-footer__company {
+    display: flex;
+    flex-direction: column;
+}
+.company__title {
+    color: rgb(4, 120, 254);
+    font-size: 18px;
+    line-height: 19px;
+    padding-bottom: 25px;
+}
+.company__menu {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.company__item {
+
+}
+.company__link {
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: -0.2px;
+    transition: all 0.3s;
+}
+.company__link:hover {
+    color: #0478fe;
+}
+
+/* ------------------------------- */
+
+.top-footer__contact {
+    display: flex;
+    flex-direction: column;
+}
+.contact__title {
+    color: rgb(4, 120, 254);
+    font-size: 18px;
+    line-height: 19px;
+    padding-bottom: 25px;
+}
+.contact__menu {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.contact__item {
+
+}
+.contact__link {
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: -0.2px;
+    transition: all 0.3s;
+}
+.contact__link:hover {
+    color: #0478fe;
+}
+@media (max-width: 424.98px){
+    .product__link,
+    .company__link,
+    .contact__link {
+        font-size: 14px;
+    }
+    .product__title,
+    .company__title,
+    .contact__title {
+        font-size: 16px;
+    }
+}
+/* ============================================================= */
+
+.footer__bottom {
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+@media (max-width: 767.98px){
+    .footer__bottom {
+        flex-direction: column;
+        gap: 34px;
+        padding-top: 25px;
+    }
+}
+.bottom-footer__conditions {
+    display: flex;
+    align-items: center;
+    column-gap: 45px;
+}
+.conditions__link {
+    color: #fff;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: -0.2px;
+    transition: all 0.3s;
+}
+.conditions__link:hover {
+    color: #0478fe;
+}
+@media (max-width: 424.98px){
+    .conditions__link {
+        font-size: 13px;
+    }
+}
+/* ------------------------------------- */
+
+.bottom-footer__social {
+
+}
+.social__list {
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+}
+.social__item {
+
+}
+.social__link {
+}
+.social__link img {
+    transition: all 0.3s;
+}
+.social__link img:hover {
+    transform: scale(02);
+}
