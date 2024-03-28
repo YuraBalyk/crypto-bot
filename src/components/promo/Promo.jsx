@@ -31,11 +31,15 @@ function Promo() {
                 </div>
 
 
-                <div className="promo__bg-shadow-midle"><img src={shadow1} alt="" /></div>
 
-                <div className="promo__bg-img1"><img src={bgImg1} alt="bg-img1" /></div>
+                <div className="promo__background-wrap">
+                    <div className="promo__background">
+                        {/* <img src={bgImg1} alt="img1" className="promo__bg-image"/> */}
+                        {/* <img src={shadow1} alt="" className="promo__bg-shadow"/> */}
+                        <img src={bgImg2} alt="img2" className="promo__bg-robot"/>
+                    </div>
+                </div>
 
-                <div className="promo__bg-img2"><img src={bgImg2} alt="bg-img2" /></div>
 
             </div>
         </section>

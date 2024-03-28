@@ -1,74 +1,56 @@
 .promo {
-    padding-top: 210px;
+    padding-top: 150px;
 }
 
+@media (max-width: 1023.98px) {
+    .promo {
+        padding-top: 50px;
+    }
+}
 
 .promo__wrap {
     position: relative;
-    width: 100%;
-    min-height: 710px;
-    overflow: hidden;
-}
-@media (max-width: 767.98px){
-    .promo {
-        padding-top: 150px;
-    }
-    .promo__wrap {
-        min-height: 610px;
-    }
 }
 
-.promo__bg-shadow-midle img {
+
+/* ==================================================================================== */
+
+.promo__background-wrap {}
+
+.promo__background {}
+
+.promo__bg-image {}
+
+.promo__bg-shadow {}
+
+.promo__bg-robot {
     position: absolute;
-    left: 25%;
-    top: 20%;
-    z-index: -3;
-    max-width: 100%;
-    height: auto;
-    width: 68.54%;
-    height:  88.45%;
+    top: 0;
+    right: 160px;
 }
 
-@media (max-width: 930px) {
-    .promo__bg-shadow-midle img {
-        top: 0%;
-    }
-}
-
-.promo__bg-img1 {
-    position: absolute;
-    left: 32.39%;
-    top: 3.52%;
-    z-index: -2;
-}
-
-.promo__bg-img2 {
-    position: absolute;
-    margin-left: 37.09%;
-    top: 0%;
-    max-width: 48.12%;
-    max-height: 100%;
-    z-index: -1;
-}
-@media (max-width: 767.98px){
-    .promo__bg-img2 {
-        display: none;
-    }
-    .promo__bg-shadow-midle img {
-        display: none;
-    }
-}
-/* =========================================== */
+/* ==================================================================================== */
 .promo__info-block {
     display: flex;
     justify-content: space-between;
-    padding-top: 32px;
-    min-height: 100%;
+    background: url('../../img/main/bg1.png'), radial-gradient(circle, #0478FE 5%, transparent 70%);
+    background-size: 784px 780px;
+    background-repeat: no-repeat;
+    background-position: right;
+    min-height: 730px;
+    max-height: 730px;
 }
-@media (max-width: 767.98px){
+
+@media (max-width: 1023.98px) {
     .promo__info-block {
         flex-direction: column;
-        min-height: 0;
+        justify-content: start;
+        background: none;
+
+    }
+
+    .promo__bg-robot {
+        display: none;
     }
 }
 
@@ -76,6 +58,7 @@
     display: flex;
     flex-direction: column;
     row-gap: 24px;
+    z-index: 10;
 }
 
 .promo__title {
@@ -85,6 +68,7 @@
     text-align: left;
     text-transform: uppercase;
     max-width: 600px;
+    padding-top: 30px;
 }
 
 .promo__subtitle {
@@ -106,52 +90,61 @@
     white-space: nowrap;
     transition: all 0.3s;
 }
+
 .promo__button:hover {
     background-color: #005AE0;
 }
-@media (max-width: 1023.98px){
+
+@media (max-width: 1023.98px) {
     .promo__title {
         font-size: 80px;
-         max-width: 600px;
-         line-height: 80px;
+        max-width: 600px;
+        line-height: 80px;
     }
 }
-@media (max-width: 768.98px){
+
+@media (max-width: 768.98px) {
     .promo__title {
         font-size: 70px;
-         max-width: 500px;
-         line-height: 60px;
+        max-width: 500px;
+        line-height: 60px;
     }
+
     .promo__button {
         font-size: 16px;
         padding: 20px 68px;
         max-width: 198px;
     }
 }
-@media (max-width: 424.98px){
+
+@media (max-width: 424.98px) {
     .promo__title {
         font-size: 50px;
-         max-width: 400px;
+        max-width: 400px;
     }
+
     .promo__subtitle {
         font-size: 18px;
         line-height: 24px;
     }
 
 }
+
 /* --------------------------------- */
 .promo__indexes {
     display: flex;
     flex-direction: column;
     row-gap: 60px;
-    margin-top: 225px;
+    padding-top: 225px;
+    padding-right: 40px;
 }
 
 .indexes__trade {}
 
-.trade__nums {   
+.trade__nums {
     font-size: 46px;
-    font-weight: 600;}
+    font-weight: 600;
+}
 
 .trade__text {
     color: #818fa3;
@@ -159,7 +152,6 @@
     font-weight: 400;
     line-height: 30px;
 }
-
 
 .indexes__ligaments {}
 
@@ -174,23 +166,29 @@
     font-weight: 400;
     line-height: 30px;
 }
-@media (max-width: 767.98px){
+
+@media (max-width: 1023.98px) {
     .promo__indexes {
         flex-direction: row;
-        column-gap: 90px;
-        margin-top: 65px;
+        column-gap: 45px;
+        padding-top: 60px;
+        padding-right: 0px;
+    }
+
+    .indexes__trade {
+        border-right: 1px solid #2B394D;
+        padding-right: 45px;
     }
 }
-@media (max-width: 424.98px){
+
+@media (max-width: 424.98px) {
     .ligaments__text,
     .trade__text {
         font-size: 16px;
     }
+
     .ligaments__nums,
     .trade__nums {
         font-size: 36px;
-    }
-    .promo__indexes {
-        column-gap: 60px;
     }
 }
