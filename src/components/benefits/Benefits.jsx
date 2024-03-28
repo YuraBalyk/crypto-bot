@@ -6,8 +6,6 @@ import filter from '../../img/benefits/03.svg';
 
 
 
-
-
 const Benefits = () => {
     return (
         <section className="benefits">
@@ -15,7 +13,6 @@ const Benefits = () => {
                 <h1 className="benefits__title">And other benefits</h1>
 
                 <div className="benefits__items-wrap">
-
                     <div className="benefits__item">
                         <div className="item__title">
                             <img className="title__icon" src={ diamond } alt="" />
@@ -37,7 +34,6 @@ const Benefits = () => {
                         </div>
                         <h3 className="item__subtitle">Collaborate with team members using our powerful devtool integrations.</h3>
                     </div>
-
                 </div>
 
             </div>

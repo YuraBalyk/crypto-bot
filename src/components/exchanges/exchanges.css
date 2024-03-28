@@ -42,3 +42,12 @@
 .exchanges__img {
 
 }
+@media (max-width: 767.98px){
+    .exchanges__item {
+        width: 100%;
+    }
+    .exchanges__title {
+        font-size: 16px;
+        align-self: flex-start;
+    }
+}

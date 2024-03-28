@@ -63,7 +63,6 @@ function Footer() {
 
                         </div>
 
-
                     </div>
 
                     <div className="footer__bottom">

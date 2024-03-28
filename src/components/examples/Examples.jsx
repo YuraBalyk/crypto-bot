@@ -15,72 +15,16 @@ import shadow from '../../img/examples/shadow.png'
 
 const Examples = () => {
 
+    const [visibleRows, setVisibleRows] = useState({});
 
-
-    const [visibilityArray, setVisibilityArray] = useState(Array(6).fill(false));
-
-
-    const toggleActionsColumn = (index) => {
-
-        const updatedVisibilityArray = visibilityArray.map((item, itemIndex) =>
-            index === itemIndex ? !item : item
-        );
-        setVisibilityArray(updatedVisibilityArray);
+    const toggleVisibility = (index) => {
+        setVisibleRows((currentVisibleRows) => ({
+            ...currentVisibleRows,
+            [index]: !currentVisibleRows[index],
+        }));
     };
 
-
-    const rows = visibilityArray.map((isVisible, index) => (
-        <div key={index} className={`table__row noname ${isVisible ? 'is-expanded' : ''}`}>
-
-            <div className="exchanges__column">
-                <div className="exchanges-column__icons">
-                    <img src={bybit} alt="bybit" />
-                    <img src={arrows} alt="arrows" />
-                    <img src={binance} alt="binance" />
-                </div>
-            </div>
-
-            <div className={`actions__column ${isVisible ? 'is-visible' : ''}`}>
-                <div className="actions__sell">
-                    <img src={binance} alt="binance" className="sell__icon" />
-                    <p className="sell__text">Selled 0,5 BTC <br /> for $14,500</p>
-                </div>
-
-                <div className="actions__arrow-right">
-                    <img src={arrowRight} alt="arrowRight" />
-                </div>
-
-                <div className="actions__buy">
-                    <img src={bybit} alt="binance" className="buy__icon" />
-                    <p className="buy__text">Buyed 0,5 BTC $ 14,100</p>
-                </div>
-
-                <div className="actions__arrow-right">
-                    <img src={arrowRight} alt="arrowRight" />
-                </div>
-
-                <div className="actions__move">
-                    <p className="move__text">Move 0,5 BTC From ByBit to Binance</p>
-                </div>
-            </div>
-
-            <div className="profit__column">
-                <div className="profit__img">
-                    <img src={tezer} alt="tezer" />
-                </div>
-                <div className="profit__amount">
-                    <p className="amount__text">Profit:</p>
-                    <p className="amount__value">$ 380 USDT</p>
-                </div>
-            </div>
-
-            <button type='button' className="arrow__hidden" onClick={() => toggleActionsColumn(index)}>
-                <img src={arrowDown} alt="arrowDown" className={`arrow__icon ${isVisible ? 'is-rotated' : ''}`} />
-            </button>
-
-        </div>
-    ));
-
+    const rows = Array(6).fill(null);
 
     return (
         <section className='examples'>
@@ -98,8 +42,99 @@ const Examples = () => {
 
                 <div className="examples__table">
 
+                    <div className=" table-row__name ">
+                        <div className="column__name exchanges-column__name">
+                            <p>Exchanges:</p>
+                        </div>
+                        <div className="column__name actions-column__name">
+                            <p>Actions:</p>
+                        </div>
+                        <div className="column__name profit-column__name">
+                            <p>Profit:</p>
+                        </div>
+                    </div>
 
-                    {rows}
+                    {rows.map((_, index) => (
+                        <div key={index} className="table__row">
+                            <div className="table-row__wrap">
+
+                                <div className="exchanges__column">
+
+                                    <div className="exchanges-column__icons">
+                                        <img src={bybit} alt="bybit" />
+                                        <img src={arrows} alt="arrows" />
+                                        <img src={binance} alt="binance" />
+                                    </div>
+                                </div>
+
+                                <div className="actions__column">
+
+                                    <div className="actions__sell">
+                                        <img src={binance} alt="binance" className="sell__icon" />
+                                        <p className="sell__text">Selled 0,5 BTC <br /> for $14,500</p>
+                                    </div>
+
+                                    <div className="actions__arrow-right">
+                                        <img src={arrowRight} alt="arrowRight" />
+                                    </div>
+
+                                    <div className="actions__buy">
+                                        <img src={bybit} alt="binance" className="buy__icon" />
+                                        <p className="buy__text">Buyed 0,5 BTC $ 14,100</p>
+                                    </div>
+
+                                    <div className="actions__arrow-right">
+                                        <img src={arrowRight} alt="arrowRight" />
+                                    </div>
+
+                                    <div className="actions__move">
+                                        <p className="move__text">Move 0,5 BTC From ByBit to Binance</p>
+                                    </div>
+                                </div>
+
+                                <div className="profit__column">
+
+                                    <div className="profit__img">
+                                        <img src={tezer} alt="tezer" />
+                                    </div>
+                                    <div className="profit__amount">
+                                        <p className="amount__text">Profit:</p>
+                                        <p className="amount__value">$ 380 USDT</p>
+                                    </div>
+                                </div>
+
+                                <button type='button' className="arrow__hidden" onClick={() => toggleVisibility(index)}>
+                                    <img src={arrowDown} alt="arrowDown" className={`arrow__icon ${visibleRows[index] ? 'is-rotated' : ''}`} />
+                                </button>
+
+                            </div>
+
+                            <div className={`actions__column actions-column__hidden ${visibleRows[index] ? 'show' : ''}`}>
+
+                                <div className="actions__sell">
+                                    <img src={binance} alt="binance" className="sell__icon" />
+                                    <p className="sell__text">Selled 0,5 BTC <br /> for $14,500</p>
+                                </div>
+
+                                <div className="actions__arrow-right">
+                                    <img src={arrowRight} alt="arrowRight" />
+                                </div>
+
+                                <div className="actions__buy">
+                                    <img src={bybit} alt="binance" className="buy__icon" />
+                                    <p className="buy__text">Buyed 0,5 BTC $ 14,100</p>
+                                </div>
+
+                                <div className="actions__arrow-right">
+                                    <img src={arrowRight} alt="arrowRight" />
+                                </div>
+
+                                <div className="actions__move">
+                                    <p className="move__text">Move 0,5 BTC From ByBit to Binance</p>
+                                </div>
+                            </div>
+                        </div>
+                    ))}
 
                 </div>
 

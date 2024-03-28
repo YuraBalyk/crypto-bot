@@ -6,9 +6,6 @@ import shadow1 from '../../img/main/shadow1.png';
 import shadow2 from '../../img/main/shadow2.png';
 
 
-
-
-
 function Promo() {
     return (
         <section className="promo">

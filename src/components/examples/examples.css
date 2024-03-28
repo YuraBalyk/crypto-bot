@@ -1,6 +1,5 @@
 .examples {
     padding-bottom: 40px;
-
 }
 
 .examples__wrap {
@@ -30,6 +29,16 @@
     position: absolute;
 }
 
+@media (max-width: 1023.98px) {
+    .examples__shadow {
+        display: none;
+    }
+
+    .examples__main-icon {
+        align-self: flex-start;
+    }
+}
+
 /* ------------------------------- */
 .examples__title {
     font-size: 45px;
@@ -51,8 +60,17 @@
     line-height: 20px;
     padding-bottom: 70px;
 }
+@media (max-width: 767.98px){
+    .examples__title {
+        font-size: 35px;
+        padding-top: 30px;
+    }
+    .examples__subtitle {
+        font-size: 16px;
+    }
+}
 
-/* ========================================= */
+/* ================================================================================ */
 
 .examples__table {
     display: flex;
@@ -62,28 +80,53 @@
     row-gap: 20px;
 }
 
-
 .table__row {
+    display: flex;
+    flex-direction: column;
+    row-gap: 23px;
+    background: #151e2e;
+    border-radius: 12px;
+    padding: 16px 20px;
+}
+
+.table-row__wrap {
     display: flex;
     align-items: center;
     column-gap: 50px;
     justify-content: space-between;
-    border-radius: 12px;
-    background: rgb(21, 30, 46);
-    padding: 16px 20px;
+}
+
+.table-row__name {
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+    justify-content: space-between;
     position: relative;
 }
 
-
-
-.exchanges__column {
-    position: relative;
+.column__name {
+    position: absolute;
+    top: 10;
+    color: #818FA3;
+    font-size: 14px;
+    line-height: 16px;
 }
 
 .exchanges-column__name {
-    position: absolute;
-    top: -60px;
-    left: 0;
+   left: 0;
+}
+
+.actions-column__name {
+    left: 21%;
+}
+
+.profit-column__name {
+    right: 13.5%;
+}
+
+/* =================================================== */
+.exchanges__column {
+    position: relative;
 }
 
 .exchanges-column__icons {
@@ -98,13 +141,10 @@
     display: flex;
     align-items: center;
     column-gap: 25px;
+    position: relative;
 }
 
-.actions-column__name {
-    position: absolute;
-    top: -60px;
-    left: 0;
-}
+
 
 .actions__sell {
     display: flex;
@@ -159,6 +199,11 @@
     line-height: 20px;
 }
 
+.actions-column__hidden {
+    align-self: center;
+    display: none;
+}
+
 /* ===================================================== */
 
 .profit__column {
@@ -173,10 +218,57 @@
     position: relative;
 }
 
-.profit-column__name {
-    position: absolute;
-    top: -55px;
-    left: 0;
+.profit__img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(38, 161, 123, 0.1);
+}
+
+.profit__amount {}
+
+.amount__text {
+    color: #818fa3;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.amount__value {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    color: #04FEC2;
+    white-space: nowrap;
+}
+
+.arrow__hidden {
+    display: none;
+}
+
+.arrow__icon.is-rotated {
+    transform: rotate(180deg);
+}
+
+
+/* =================================================== */
+.table__button {
+    box-sizing: border-box;
+    border: 1px solid rgb(4, 120, 254);
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 25px 68px;
+    transition: all 0.3s;
+    white-space: nowrap;
+}
+
+.table__button:hover {
+    background: rgb(0, 90, 224);
 }
 
 @media (max-width: 1179.98px) {
@@ -208,79 +300,14 @@
     }
 }
 
-.profit__img {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background: rgba(38, 161, 123, 0.1);
-}
-
-.profit__amount {}
-
-.amount__text {
-    color: #818fa3;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 20px;
-
-}
-
-.amount__value {
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 20px;
-    color: #04FEC2;
-    white-space: nowrap;
-}
-
-.arrow__hidden {
-    display: none;
-}
-
-
-/* =================================================== */
-.table__button {
-    box-sizing: border-box;
-    border: 1px solid rgb(4, 120, 254);
-    border-radius: 25px;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 20px;
-    padding: 25px 68px;
-    transition: all 0.3s;
-    white-space: nowrap;
-}
-
-.table__button:hover {
-    background: rgb(0, 90, 224);
-}
-
 @media (max-width: 1023.98px) {
-    .table__row {
-        transition: padding-bottom 0.3s ease;
-    }
-
-    .table__row.is-expanded {
-        padding-bottom: 90px;
-    }
 
     .actions__column {
         display: none;
-        position: absolute;
-        bottom: 20px;
-        left: 0;
-        width: 100%;
     }
 
-    .actions__column.is-visible {
+    .actions-column__hidden.show {
         display: flex;
-        align-items: center;
-        justify-content: space-between;
-        width: 100%;
-        padding: 0px 20px;
     }
 
     .arrow__hidden {
@@ -305,13 +332,12 @@
 }
 
 @media (max-width: 767.98px) {
-    .actions__column.is-visible {
-        flex-direction: column;
-        gap: 10px;
+    .table-row__wrap {
+        column-gap: 20px;
     }
 
-    .table__row.is-expanded {
-        padding-bottom: 320px;
+    .table__row {
+        padding: 16px 10px;
     }
 
     .profit__column {
@@ -324,9 +350,17 @@
     .table__button {
         padding: 20px 68px;
     }
+
     .actions__arrow-right {
         transform: rotate(90deg);
         background: transparent;
+    }
+
+    .actions-column__hidden {
+        flex-direction: column;
+    }
+    .profit-column__name {
+        right: 0%;
     }
 }
 

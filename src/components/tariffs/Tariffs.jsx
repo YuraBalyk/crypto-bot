@@ -7,7 +7,7 @@ import shadow from '../../img/tariffs/shadow.png';
 
 
 const Tariffs = () => {
-    return ( 
+    return (
         <section className="tariffs">
             <div className="tariffs__wrap container">
 
@@ -16,7 +16,9 @@ const Tariffs = () => {
 
                     <div className="tariffs-headline__main-block">
                         <div className="tariffs-headline__icon">
-                            <img src={business} alt="business-img" />
+                            <div className="headline-icon__img">
+                                <img src={business} alt="business-img" />
+                            </div>
                             <img src={shadow} alt="shadow-img" className="tariffs-headline__shadow" />
                         </div>
                         <h1 className="tariffs-headline__title">Tariffs</h1>
@@ -25,7 +27,6 @@ const Tariffs = () => {
 
                     <div className="tariffs-headline__right-img"><img src={right} alt="right-img" /></div>
                 </div>
-
 
                 <div className="tariffs__cards">
                     <div className="tariffs__item">
@@ -47,7 +48,7 @@ const Tariffs = () => {
 
             </div>
         </section>
-     );
+    );
 }
- 
+
 export default Tariffs;

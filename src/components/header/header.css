@@ -2,12 +2,12 @@
     padding-top: 25px;
     padding-bottom: 25px;
     border-bottom: 1px solid rgb(43, 57, 77);
-    position: fixed;
-    top: 0;
-    left: 0;
+    /* position: fixed; */
+    /* top: 0;
+    left: 0; */
     width: 100%;
     z-index: 1000;
-    background-color: #1b2434e2;
+    background-color: #1b243400;
 }
 
 .header__container {}

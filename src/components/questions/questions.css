@@ -49,11 +49,19 @@
     padding-left: 106px;
 }
 @media (max-width: 767.98px){
-    .questions__title-icon {
-        display: none;
-    }
     .questions__subtitle {
         padding-left: 0px;
+        font-size: 16px;
+    }
+    .questions__title-wrap {
+        flex-direction: column;
+        align-items: start;
+    }
+    .questions__title {
+        font-size: 35px;
+    }
+    .questions__headline {
+        padding-bottom: 48px;
     }
 }
 

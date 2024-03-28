@@ -8,8 +8,7 @@ import kucoin from '../../img/security/04.svg';
 import binance from '../../img/security/05.svg';
 import lock from '../../img/security/lock.svg';
 import time from '../../img/security/time.svg';
-import ball from '../../img/security/ball.png';
-import shadow from '../../img/security/shadow.png';
+
 
 const Bot = () => {
     return (
@@ -36,10 +35,7 @@ const Bot = () => {
                             </p>
                         </div>
 
-                        <div className="fast__background">
-                            <img src={ball} alt="ball" className='background__fast-img' />
-                            <img src={shadow} alt="shadow" className='background__fast-shadow' />
-                        </div>
+                        <div className="fast__background"></div>
                     </div>
 
                     <div className="bot__security">

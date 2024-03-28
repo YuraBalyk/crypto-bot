@@ -11,9 +11,11 @@ const Analogos = () => {
             <div className="analogos__wrap container">
 
                 <div className="analogos__headline">
-                    
+
                     <div className="headline__img">
-                        <img src={educ} alt="educ-img" />
+                        <div className="headline-img__image">
+                            <img src={educ} alt="educ-img" className="headline-img__image" />
+                        </div>
                         <img src={shadow} alt="shadow-imgm" className="analogs__shadow" />
                     </div>
                     <h1 className="headline__title">no analogos <span>of market</span></h1>

@@ -1,11 +1,7 @@
 .promo {
     padding-top: 210px;
 }
-@media (max-width: 767.98px){
-    .promo {
-        padding-top: 150px;
-    }
-}
+
 
 .promo__wrap {
     position: relative;
@@ -13,7 +9,14 @@
     min-height: 710px;
     overflow: hidden;
 }
-
+@media (max-width: 767.98px){
+    .promo {
+        padding-top: 150px;
+    }
+    .promo__wrap {
+        min-height: 610px;
+    }
+}
 
 .promo__bg-shadow-midle img {
     position: absolute;

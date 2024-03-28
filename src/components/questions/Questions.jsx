@@ -5,9 +5,6 @@ import education from '../../img/questions/001.png';
 import close from '../../img/questions/02.png'
 
 
-
-
-
 const Questions = () => {
 
     const [activeIndex, setActiveIndex] = useState(null);
@@ -53,101 +50,6 @@ const Questions = () => {
 
 
     return (
-        // <section className="questions">
-        //     <div className="questions__wrap container">
-
-        //         <div className="questions__headline">
-        //             <div className="questions__title-wrap">
-        //                 <div className="questions__title-icon">
-        //                     <img src={education} alt="education-img" />
-        //                 </div>
-        //                 <h1 className="questions__title">Frequenly <br /> asked question</h1>
-        //             </div>
-        //             <h2 className="questions__subtitle">Сryptocurrency arbitrage fully customizable manually</h2>
-        //         </div>
-
-        //         <div className="questions__list">
-        //             <div className="questions__item">
-        //                 <div className="questions__block">
-        //                     Where can I watch?
-        //                     <img src={close} alt="close-img" className="questions-list__icon" />
-        //                 </div>
-
-        //                 <p className="questions-list__popup">
-        //                     Nibh quisque suscipit fermentum netus nulla cras porttitor euismod nulla.
-        //                     Orci, dictumst nec aliquet id ullamcorper venenatis.
-        //                 </p>
-        //             </div>
-        //             <div className="questions__item">
-        //                 <div className="questions__block">
-        //                     Varius vitae, convallis amet lacus sit aliquet nibh?
-        //                     <img src={close} alt="close-img" className="questions-list__icon" />
-        //                 </div>
-
-        //                 <p className="questions-list__popup">
-        //                     Nibh quisque suscipit fermentum netus nulla cras porttitor euismod nulla.
-        //                     Orci, dictumst nec aliquet id ullamcorper venenatis.
-        //                 </p>
-        //             </div>
-        //             <div className="questions__item">
-        //                 <div className="questions__block">
-        //                     Mauris id nibh eu fermentum mattis purus?
-        //                     <img src={close} alt="close-img" className="questions-list__icon" />
-        //                 </div>
-
-        //                 <p className="questions-list__popup">
-        //                     Nibh quisque suscipit fermentum netus nulla cras porttitor euismod nulla.
-        //                     Orci, dictumst nec aliquet id ullamcorper venenatis.
-        //                 </p>
-        //             </div>
-        //             <div className="questions__item">
-        //                 <div className="questions__block">
-        //                     Eros imperdiet rhoncus?
-        //                     <img src={close} alt="close-img" className="questions-list__icon" />
-        //                 </div>
-
-        //                 <p className="questions-list__popup">
-        //                     Nibh quisque suscipit fermentum netus nulla cras porttitor euismod nulla.
-        //                     Orci, dictumst nec aliquet id ullamcorper venenatis.
-        //                 </p>
-        //             </div>
-        //             <div className="questions__item">
-        //                 <div className="questions__block">
-        //                     Fames imperdiet quam fermentum?
-        //                     <img src={close} alt="close-img" className="questions-list__icon" />
-        //                 </div>
-
-        //                 <p className="questions-list__popup">
-        //                     Nibh quisque suscipit fermentum netus nulla cras porttitor euismod nulla.
-        //                     Orci, dictumst nec aliquet id ullamcorper venenatis.
-        //                 </p>
-        //             </div>
-        //             <div className="questions__item">
-        //                 <div className="questions__block">
-        //                     Tortor nisl pellentesque sit quis orci dolor?
-        //                     <img src={close} alt="close-img" className="questions-list__icon" />
-        //                 </div>
-
-        //                 <p className="questions-list__popup">
-        //                     Nibh quisque suscipit fermentum netus nulla cras porttitor euismod nulla.
-        //                     Orci, dictumst nec aliquet id ullamcorper venenatis.
-        //                 </p>
-        //             </div>
-        //             <div className="questions__item">
-        //                 <div className="questions__block">
-        //                     Vestibulum mauris mauris elementum proin amet auctor ipsum nibh sollicitudin?
-        //                     <img src={close} alt="close-img" className="questions-list__icon" />
-        //                 </div>
-
-        //                 <p className="questions-list__popup">
-        //                     Nibh quisque suscipit fermentum netus nulla cras porttitor euismod nulla.
-        //                     Orci, dictumst nec aliquet id ullamcorper venenatis.
-        //                 </p>
-        //             </div>
-        //         </div>
-
-        //     </div>
-        // </section>
 
         <section className="questions">
             <div className="questions__wrap container">
@@ -163,7 +65,6 @@ const Questions = () => {
                 </div>
 
                 <div className="questions__list">
-
 
                     {questions.map((item, index) => (
                         <div key={index} className="questions__item">
@@ -182,7 +83,6 @@ const Questions = () => {
                             )}
                         </div>
                     ))}
-
 
                 </div>
 

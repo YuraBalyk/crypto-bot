@@ -7,9 +7,7 @@ import equalize from '../../img/start/03.png';
 import background from '../../img/start/004.png';
 
 
-
 const Start = () => {
-
 
   return (
 
@@ -31,34 +29,38 @@ const Start = () => {
 
         <div className="start__cards">
 
-          <div className="card__create start-card">
-            <div className="img__line">
-              <img className='card__img' src={api} alt="api-img" />
-              <p className="card__num">01</p>
+          <div className="start__gradient-border">
+            <div className="card__create start-card">
+              <div className="img__line">
+                <img className='card__img' src={api} alt="api-img" />
+                <p className="card__num">01</p>
+              </div>
+
+              <h1 className="card__title">Create API keys</h1>
+              <h2 className="card__subtitle">Create API keys and Connect your exchanges' APIs to ours</h2>
             </div>
-
-
-            <h1 className="card__title">Create API keys</h1>
-            <h2 className="card__subtitle">Create API keys and Connect your exchanges' APIs to ours</h2>
-            
           </div>
 
-          <div className="card__setting start-card">
-            <div className="img__line">
-              <img className='card__img' src={setting} alt="setting-img" />
-              <p className="card__num">02</p>
+          <div className="start__gradient-border">
+            <div className="card__setting start-card">
+              <div className="img__line">
+                <img className='card__img' src={setting} alt="setting-img" />
+                <p className="card__num">02</p>
+              </div>
+              <h1 className="card__title">Setting our service</h1>
+              <h2 className="card__subtitle">Set up the exchanges, set up the pairs, set up all the settings that are there</h2>
             </div>
-            <h1 className="card__title">Setting our service</h1>
-            <h2 className="card__subtitle">Set up the exchanges, set up the pairs, set up all the settings that are there</h2>
           </div>
 
-          <div className="card__equalize start-card">
-            <div className="img__line">
-              <img className='card__img' src={equalize} alt="equalize-img" />
-              <p className="card__num">03</p>
+          <div className="start__gradient-border">
+            <div className="card__equalize start-card">
+              <div className="img__line">
+                <img className='card__img' src={equalize} alt="equalize-img" />
+                <p className="card__num">03</p>
+              </div>
+              <h1 className="card__title">Equalize  balances</h1>
+              <h2 className="card__subtitle">Equalize the balances of all exchanges, and start the bot working</h2>
             </div>
-            <h1 className="card__title">Equalize  balances</h1>
-            <h2 className="card__subtitle">Equalize the balances of all exchanges, and start the bot working</h2>
           </div>
 
         </div>
