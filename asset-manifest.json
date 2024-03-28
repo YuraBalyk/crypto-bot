@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/crypto-bot/static/css/main.cf43c36e.css",
-    "main.js": "/crypto-bot/static/js/main.b2109bc6.js",
+    "main.css": "/crypto-bot/static/css/main.ba1319bd.css",
+    "main.js": "/crypto-bot/static/js/main.9c2576a9.js",
     "static/media/robot.png": "/crypto-bot/static/media/robot.6ac6d812c13dca966f75.png",
     "static/media/shadow1.png": "/crypto-bot/static/media/shadow1.5f6a8af04904ab136d71.png",
     "static/media/shadow2.png": "/crypto-bot/static/media/shadow2.5f6a8af04904ab136d71.png",
@@ -19,11 +19,11 @@
     "static/media/tezer.svg": "/crypto-bot/static/media/tezer.4e114aa57d21c612e1dd814c21608127.svg",
     "index.html": "/crypto-bot/index.html",
     "static/media/lock.svg": "/crypto-bot/static/media/lock.1d24799fc61ad3b633023dd1aa70b328.svg",
-    "main.cf43c36e.css.map": "/crypto-bot/static/css/main.cf43c36e.css.map",
-    "main.b2109bc6.js.map": "/crypto-bot/static/js/main.b2109bc6.js.map"
+    "main.ba1319bd.css.map": "/crypto-bot/static/css/main.ba1319bd.css.map",
+    "main.9c2576a9.js.map": "/crypto-bot/static/js/main.9c2576a9.js.map"
   },
   "entrypoints": [
-    "static/css/main.cf43c36e.css",
-    "static/js/main.b2109bc6.js"
+    "static/css/main.ba1319bd.css",
+    "static/js/main.9c2576a9.js"
   ]
 }
