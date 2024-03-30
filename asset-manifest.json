@@ -1,29 +1,31 @@
 {
   "files": {
-    "main.css": "/crypto-bot/static/css/main.ba1319bd.css",
-    "main.js": "/crypto-bot/static/js/main.9c2576a9.js",
-    "static/media/robot.png": "/crypto-bot/static/media/robot.6ac6d812c13dca966f75.png",
-    "static/media/shadow1.png": "/crypto-bot/static/media/shadow1.5f6a8af04904ab136d71.png",
-    "static/media/shadow2.png": "/crypto-bot/static/media/shadow2.5f6a8af04904ab136d71.png",
+    "main.css": "/crypto-bot/static/css/main.d7d34e50.css",
+    "main.js": "/crypto-bot/static/js/main.3337fbd8.js",
+    "static/media/robot.svg": "/crypto-bot/static/media/robot.61cd169364c6d13219397bdb79351294.svg",
     "static/media/bg1.png": "/crypto-bot/static/media/bg1.3be31a2b10f2e951f7b6.png",
     "static/media/03.svg": "/crypto-bot/static/media/03.07e4701829fa4dddf34b81293bc38b05.svg",
     "static/media/04.svg": "/crypto-bot/static/media/04.394104c4f9245e6b09fa4e87a0eedf00.svg",
     "static/media/22.jpg": "/crypto-bot/static/media/22.b5a18d99630dd0d9b729.jpg",
     "static/media/05.svg": "/crypto-bot/static/media/05.9d6d184a16e1b9e68a4e4020d8291643.svg",
     "static/media/01.svg": "/crypto-bot/static/media/01.59ce50c6517d909750cac7a3ea1b00f1.svg",
-    "static/media/shadow.png": "/crypto-bot/static/media/shadow.99eb97780e95453d50a8.png",
-    "static/media/02.svg": "/crypto-bot/static/media/02.7335b80ac6930da6be0580974d41e3ab.svg",
-    "static/media/03.png": "/crypto-bot/static/media/03.362264378570c2786ae6.png",
+    "static/media/02.svg": "/crypto-bot/static/media/02.0d4aa86d678e32848cc6765cb1cc16d1.svg",
+    "static/media/logo.svg": "/crypto-bot/static/media/logo.e1ae43a42dfa142742bf4e5e1b4d9364.svg",
+    "static/media/004.svg": "/crypto-bot/static/media/004.17dbd580ece7f676083480f9d431d10e.svg",
     "static/media/time.svg": "/crypto-bot/static/media/time.4d5c21c00974029f3092855e6bf2c5c2.svg",
-    "static/media/logo.svg": "/crypto-bot/static/media/logo.ce0fc049261793951c6b70e475733c40.svg",
+    "static/media/001.svg": "/crypto-bot/static/media/001.496e45c1d7d48d6d75c83189a857c095.svg",
     "static/media/tezer.svg": "/crypto-bot/static/media/tezer.4e114aa57d21c612e1dd814c21608127.svg",
     "index.html": "/crypto-bot/index.html",
     "static/media/lock.svg": "/crypto-bot/static/media/lock.1d24799fc61ad3b633023dd1aa70b328.svg",
-    "main.ba1319bd.css.map": "/crypto-bot/static/css/main.ba1319bd.css.map",
-    "main.9c2576a9.js.map": "/crypto-bot/static/js/main.9c2576a9.js.map"
+    "static/media/shadow.svg": "/crypto-bot/static/media/shadow.29d0a5658474ec4d09771b6a24e30ca3.svg",
+    "static/media/arrows.svg": "/crypto-bot/static/media/arrows.16aa47b56bcbeafc14e2fe5c969b892f.svg",
+    "static/media/arrow-right.svg": "/crypto-bot/static/media/arrow-right.9051489058687c25b337188401615d17.svg",
+    "static/media/arrow-down.svg": "/crypto-bot/static/media/arrow-down.91aabd558ba316da59e0ca85edaf1e7a.svg",
+    "main.d7d34e50.css.map": "/crypto-bot/static/css/main.d7d34e50.css.map",
+    "main.3337fbd8.js.map": "/crypto-bot/static/js/main.3337fbd8.js.map"
   },
   "entrypoints": [
-    "static/css/main.ba1319bd.css",
-    "static/js/main.9c2576a9.js"
+    "static/css/main.d7d34e50.css",
+    "static/js/main.3337fbd8.js"
   ]
 }
