@@ -1,7 +1,7 @@
 
 import React from "react";
 import './header.css'
-import logoImg from '../../img/logo.svg';
+import logoImg from '../../img/header/logo.svg';
 
 function Header({ toggleMenu, isMenuOpen }) {
     return (
@@ -10,7 +10,7 @@ function Header({ toggleMenu, isMenuOpen }) {
                 <div className="header__wrap">
                     <div className="header__logo">
                         <img src={logoImg} alt="logo" />
-                        <span>arbibot</span>
+                        {/* <span>arbibot</span> */}
                     </div>
                     <nav className="header__nav">
                         <ul className="nav__list">

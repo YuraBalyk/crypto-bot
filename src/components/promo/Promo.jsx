@@ -1,9 +1,7 @@
 
 import './promo.css'
 import bgImg1 from '../../img/main/bg1.png';
-import bgImg2 from '../../img/main/robot.png';
-import shadow1 from '../../img/main/shadow1.png';
-import shadow2 from '../../img/main/shadow2.png';
+import bgImg2 from '../../img/main/robot.svg';
 
 
 function Promo() {
@@ -30,12 +28,8 @@ function Promo() {
                     </div>
                 </div>
 
-
-
                 <div className="promo__background-wrap">
                     <div className="promo__background">
-                        {/* <img src={bgImg1} alt="img1" className="promo__bg-image"/> */}
-                        {/* <img src={shadow1} alt="" className="promo__bg-shadow"/> */}
                         <img src={bgImg2} alt="img2" className="promo__bg-robot"/>
                     </div>
                 </div>

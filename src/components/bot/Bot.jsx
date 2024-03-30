@@ -1,6 +1,6 @@
 
 import './bot.css'
-import interFace from '../../img/security/001.png';
+import interFace from '../../img/security/001.svg';
 import botLogo from '../../img/security/01.svg';
 import bybit from '../../img/security/02.svg';
 import huobi from '../../img/security/03.svg';

@@ -1,9 +1,9 @@
 
 import './tariffs.css'
-import left from '../../img/tariffs/01.png';
-import right from '../../img/tariffs/02.png';
-import business from '../../img/tariffs/001.png';
-import shadow from '../../img/tariffs/shadow.png';
+import left from '../../img/tariffs/01.svg';
+import right from '../../img/tariffs/02.svg';
+import business from '../../img/tariffs/001.svg';
+import shadow from '../../img/tariffs/shadow.svg';
 
 
 const Tariffs = () => {

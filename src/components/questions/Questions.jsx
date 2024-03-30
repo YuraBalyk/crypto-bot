@@ -1,8 +1,12 @@
 
-import React, { useState } from 'react';
+
+
 import './questions.css';
-import education from '../../img/questions/001.png';
-import close from '../../img/questions/02.png'
+
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
+import React, { useState } from 'react';
+import education from '../../img/questions/01.svg';
+import close from '../../img/questions/02.svg'
 
 
 const Questions = () => {
@@ -40,14 +44,10 @@ const Questions = () => {
         }
     ];
 
-    const toggleItem = (index) => {
-        if (activeIndex === index) {
-            setActiveIndex(null);
-        } else {
-            setActiveIndex(index);
-        }
-    }
 
+    const toggleItem = (index) => {
+        setActiveIndex(activeIndex === index ? null : index);
+    };
 
     return (
 
@@ -76,11 +76,16 @@ const Questions = () => {
                                 />
                             </div>
 
-                            {activeIndex === index && (
-                                <p className={`questions-list__popup ${activeIndex === index ? 'active' : ''}`}>
-                                    {item.answer}
-                                </p>
-                            )}
+
+                            <TransitionGroup>
+                                {activeIndex === index && (
+                                    <CSSTransition key={index} timeout={300} classNames="detail">
+                                        <div className={`questions-list__popup ${activeIndex === index ? 'active' : ''}`}>
+                                            {item.answer}
+                                        </div>
+                                    </CSSTransition>
+                                )}
+                            </TransitionGroup>
                         </div>
                     ))}
 
@@ -94,3 +99,5 @@ const Questions = () => {
 }
 
 export default Questions;
+
+

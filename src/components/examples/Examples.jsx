@@ -1,15 +1,16 @@
 import React, { useState } from 'react';
+import { CSSTransition } from 'react-transition-group';
 
 import './examples.css';
-import mainIcon from '../../img/examples/001.png';
-import binance from '../../img/examples/02.png';
-import huobi from '../../img/examples/03.png';
-import bybit from '../../img/examples/01.png';
-import arrows from '../../img/examples/arrows.png';
-import arrowRight from '../../img/examples/arrow-right.png';
-import arrowDown from '../../img/examples/arrow-down.png';
+import mainIcon from '../../img/examples/001.svg';
+import binance from '../../img/examples/02.svg';
+import huobi from '../../img/examples/03.svg';
+import bybit from '../../img/examples/01.svg';
+import arrows from '../../img/examples/arrows.svg';
+import arrowRight from '../../img/examples/arrow-right.svg';
+import arrowDown from '../../img/examples/arrow-down.svg';
 import tezer from '../../img/examples/tezer.svg';
-import shadow from '../../img/examples/shadow.png'
+import shadow from '../../img/examples/shadow.svg'
 
 
 
@@ -109,7 +110,40 @@ const Examples = () => {
 
                             </div>
 
-                            <div className={`actions__column actions-column__hidden ${visibleRows[index] ? 'show' : ''}`}>
+                            <CSSTransition
+                                in={visibleRows[index]} 
+                                timeout={200} 
+                                classNames="detail"
+                                unmountOnExit
+                            >
+                                <div className="actions__column actions-column__hidden">
+
+                                    <div className="actions__sell">
+                                        <img src={binance} alt="binance" className="sell__icon" />
+                                        <p className="sell__text">Selled 0,5 BTC <br /> for $14,500</p>
+                                    </div>
+
+                                    <div className="actions__arrow-right">
+                                        <img src={arrowRight} alt="arrowRight" />
+                                    </div>
+
+                                    <div className="actions__buy">
+                                        <img src={bybit} alt="binance" className="buy__icon" />
+                                        <p className="buy__text">Buyed 0,5 BTC $ 14,100</p>
+                                    </div>
+
+                                    <div className="actions__arrow-right">
+                                        <img src={arrowRight} alt="arrowRight" />
+                                    </div>
+
+                                    <div className="actions__move">
+                                        <p className="move__text">Move 0,5 BTC From ByBit to Binance</p>
+                                    </div>
+                                </div>
+                            </CSSTransition>
+
+
+                            {/* <div className={`actions__column actions-column__hidden ${visibleRows[index] ? 'show' : ''}`}>
 
                                 <div className="actions__sell">
                                     <img src={binance} alt="binance" className="sell__icon" />
@@ -132,7 +166,7 @@ const Examples = () => {
                                 <div className="actions__move">
                                     <p className="move__text">Move 0,5 BTC From ByBit to Binance</p>
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
                     ))}
 

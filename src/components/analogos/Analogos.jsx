@@ -1,9 +1,9 @@
 
 import './analogos.css';
-import shadow from '../../img/analogos/shadow.png';
-import educ from '../../img/analogos/01.png';
-import img2 from '../../img/analogos/02.png';
-import img3 from '../../img/analogos/03.png';
+import shadow from '../../img/analogos/shadow.svg';
+import educ from '../../img/analogos/01.svg';
+import img2 from '../../img/analogos/02.svg';
+import img3 from '../../img/analogos/03.svg';
 
 const Analogos = () => {
     return (

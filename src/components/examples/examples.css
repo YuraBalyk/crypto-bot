@@ -60,11 +60,13 @@
     line-height: 20px;
     padding-bottom: 70px;
 }
-@media (max-width: 767.98px){
+
+@media (max-width: 767.98px) {
     .examples__title {
         font-size: 35px;
         padding-top: 30px;
     }
+
     .examples__subtitle {
         font-size: 16px;
     }
@@ -113,7 +115,7 @@
 }
 
 .exchanges-column__name {
-   left: 0;
+    left: 0;
 }
 
 .actions-column__name {
@@ -143,7 +145,6 @@
     column-gap: 25px;
     position: relative;
 }
-
 
 
 .actions__sell {
@@ -204,8 +205,9 @@
     display: none;
 }
 
-/* ===================================================== */
 
+
+/* ================================================================================================================ */
 .profit__column {
     display: flex;
     align-items: center;
@@ -271,6 +273,59 @@
     background: rgb(0, 90, 224);
 }
 
+/* ======================================================================================================== */
+/* .detail-enter {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  .detail-enter-active {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 300ms, transform 300ms;
+  }
+  .detail-exit {
+    opacity: 1;
+    transform: scale(1);
+  }
+  .detail-exit-active {
+    opacity: 0;
+    transform: scale(0.95);
+    transition: opacity 300ms, transform 300ms;
+  } */
+
+
+
+  .detail-enter {
+    max-height: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: max-height 0.8s ease-out, opacity 0.4s ease-out;
+  }
+  
+  .detail-enter-active {
+    max-height: 500px;
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .detail-exit {
+    max-height: 500px;
+    opacity: 1;
+    /* visibility: visible; */
+  }
+  
+  .detail-exit-active {
+    max-height: 0;
+    opacity: 0;
+    /* visibility: hidden; */
+    transition: max-height 0.8s ease-out, opacity 0.4s ease-out;
+  }
+  
+
+
+
+/* ====================================================================================================== */
+
 @media (max-width: 1179.98px) {
     .table__row {
         column-gap: 25px;
@@ -302,11 +357,12 @@
 
 @media (max-width: 1023.98px) {
 
+
     .actions__column {
         display: none;
     }
 
-    .actions-column__hidden.show {
+    .actions-column__hidden {
         display: flex;
     }
 
@@ -359,6 +415,7 @@
     .actions-column__hidden {
         flex-direction: column;
     }
+
     .profit-column__name {
         right: 0%;
     }

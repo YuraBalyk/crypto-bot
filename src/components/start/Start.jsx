@@ -1,10 +1,10 @@
 
 import './start.css';
-import interFace from '../../img/start/001.png';
-import api from '../../img/start/01.png';
-import setting from '../../img/start/02.png';
-import equalize from '../../img/start/03.png';
-import background from '../../img/start/004.png';
+import interFace from '../../img/start/001.svg';
+import api from '../../img/start/01.svg';
+import setting from '../../img/start/02.svg';
+import equalize from '../../img/start/03.svg';
+import background from '../../img/start/004.svg';
 
 
 const Start = () => {
